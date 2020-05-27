@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login V19</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+	<div id="main">
+		<div id="noteContainer" class="col-md-2 col-sm-4">
+			<div class="notes">
+				<div style="margin: 20px 5px 10px 5px"><button id="logout" class="btn-footer btn btn-info">Logout</button>
+				</div>
+				<hr>
+				<div id="note-heads">
+					<!-- <div class="note-head">
+						<p class="title">Title</p>
+						<p class="desc">Description. Lorem ipsum dolor sit amet</p>
+					</div> -->
+				</div>
+			</div>
+			<div id="addNote">
+				<span style="text-align: center; display: table;" class="note-head">
+					<i class="material-icons icon">add_circle_outline</i>
+				</span>
+			</div>
+		</div>
+		<div class="body col-md-10 col-sm-8 note">
+			<div class="form-control note-body" onfocus="setbg('#fffddf');" rows="5" id="textbodymd"></div>
+			<textarea class="form-control note-body hidden" onfocus="setbg('#fffddf');" rows="5" id="textbody"></textarea>
+			<div class="footer-container" style="display: flex; width: 100%; height: 5%;">
+				<div style="padding: 0px 5px 0px 0px" class="col-md-2"><button id="delete"
+						class="btn-footer btn btn-outline-danger hidden">Delete note</button></div>
+				<div style="padding: 0px 5px 0px 0px;" class="col-md-2"><a id="info"
+						class="btn-footer btn btn-outline-secondary hidden" target="_blank"
+						href="https://scottboms.com/downloads/documentation/markdown_cheatsheet.pdf">MarkDown
+						Syntax</a>
+				</div>
+				<div style="padding: 0px 5px 0px 0px" class="col-md-4"><button id="discard"
+						class="btn-footer btn btn-outline-warning hidden">Discard changes</button></div>
+				<div style="padding: 0" class="col-md-4"><button id="save"
+						class="btn-footer btn btn-outline-success hidden">Save note</button></div>
+			</div>
+		</div>
+	</div>
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/notes.js"></script>
+
+</body>
+
+</html>
